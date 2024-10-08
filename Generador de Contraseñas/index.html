@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+    <h2>Generador de contraseñas</h2>
+    <input type="number"  id="length" value="12" min="1">
+
+    <div>
+        <input type="checkbox" id="includeNumbers" checked>
+        <label for="includeNumbers"> Incluir Numeros</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="includeUpperCase" checked>
+        <label for="includeUpperCase"> Incluir Mayusculas</label>
+    </div>
+    
+    
+    <div>
+        <input type="checkbox" id="includeSymbols" checked>
+        <label for="includeSymbols"> Incluir Simbolos</label>
+    </div>
+
+    <button onclick="generate()">Generar</button>
+    <p>Contraseña generada: <span id="result"></span></p>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #22beee;
+}
+
+@keyframes parpadeo {
+    0% { color: #333; }
+    25% { color: #f00; }  
+    50% { color: #00f; }   
+    75% { color: #0f0; }   
+    100% { color: #333; }
+}
+
+h1 {
+    text-align: center;  
+    font-size: 2rem;     
+    margin-bottom: 20px; 
+    animation: parpadeo 2s infinite;
+}
+
+
+.calculadora{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+
+#resultado{
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.botones{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+button{
+    height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
